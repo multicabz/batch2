@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="stylesheets/screen.css">
+</head>
+<body>
+<section id="fb">
+    <form id="signupForm" action="">
+        <h1>Sign Up</h1>
+        <p>It's free and always will be</p>
+        <div class="fields">
+            <div class="control">
+                <input type="text" id="username" class="f" placeholder="First name" required>
+            </div>
+            <div class="control">
+                <input type="email" id="email" class="f" placeholder="Last name" required>
+            </div>
+            <div class="control">
+                <input type="text" id="phoneNumber" class="f" placeholder="Mobile number or email">
+            </div>
+            <div class="control">
+                <input type="text" id="password" class="f" placeholder="New password" required>
+            </div>
+            <div class="control">
+                <input type="submit" class="form-submit-btn" value="Sign Up">
+            </div>
+        </div>
+    </form>
+</section>
+<script src="js/jquery-1.9.1.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script>
+    $("#signupForm").validate({
+        rules: {
+            username: "required",
+            email: "required"
+        }
+    });
+</script>
+</body>
+</html>
